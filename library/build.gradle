@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         consumerProguardFiles 'proguard-rules.txt'
+        minSdkVersion 14
     }
 }
 
@@ -34,4 +35,4 @@ task javadoc(type: Javadoc) {
     options.links = ['https://developer.android.com/reference/']
 }
 
-apply from: rootProject.file('release.gradle')
+// apply from: rootProject.file('release.gradle')
